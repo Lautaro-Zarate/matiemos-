@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #6a4228;
+}
+nav{
+    background-color:#bb7d3c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.brand-navbar{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+.greeting-nav{
+    font-size: 22px;
+    margin-right: 30px;
+}
+
+/* ASKNAME SECTION */
+.askName-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 50%;
+    width: auto;
+    margin: 50% 10px;
+    padding: 60px 10px;
+    border-radius: 12px;
+    background-color: #bb7d3c;
+    text-align: center;
+}
+.askName-container p{
+    font-size: 40px;
+    font-weight: 900;
+    color: #2e1b11;
+}
+.askName-container h1{
+    font-size: 30px;
+    color: #2e1b11;
+    margin-bottom: 20px;
+}
+.askName-container input{
+    width: 300px;
+    height: 50px;
+    border-bottom: 2px solid #2e1b11;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    background-color: transparent;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #2e1b11;
+}
+.askName-container input::placeholder{
+    color: #2e1b11;
+    font-size: 18px;
+}
+.askName-container input:focus{
+    border: 1px solid #2e1b11;
+    transition: 0.3s;
+}
+.askName-container button{
+    width: 200px;
+    height: 50px;
+    border-radius: 12px;
+    border: none;
+    background-color: #2e1b11;
+    color: #d6a639;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.askName-container button:hover{
+    scale: 1.05;
+    font-size: 18px;
+    transition: 0.5s
+}
