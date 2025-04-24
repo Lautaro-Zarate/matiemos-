@@ -6,6 +6,7 @@
 body{
     background-color: #6a4228;
 }
+/* NAVBAR */
 nav{
     background-color:#bb7d3c;
     display: flex;
@@ -14,15 +15,10 @@ nav{
     align-items: center;
 }
 .brand-navbar{
-    width: 150px;
+    width: 300px;
     height: 150px;
-    object-fit: contain;
+    object-fit: cover;
 }
-.greeting-nav{
-    font-size: 22px;
-    margin-right: 30px;
-}
-
 /* ASKNAME SECTION */
 .askName-container{
     display: flex;
@@ -83,4 +79,58 @@ nav{
     scale: 1.05;
     font-size: 18px;
     transition: 0.5s
+}
+/* HOME */
+.home-greeting-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+    gap: 20px;
+    padding: 0 20px;
+    text-align: center;
+}
+.home-greeting-container h1{
+    font-size: 42px;
+}
+.home-greeting-container p{
+    font-size: 20px;
+}
+/* SELECTOR DRINK CONTAINER */
+.selector-drink-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+/* DRINK-CARD */
+.drink-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 10px 5px;
+    background-color: #bb7d3c;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.drink-card:hover{
+    scale: 1.05;
+    transition: 0.5s;
+}
+.drink-card:checked{
+    background-color: #2e1b11;
+    color: #d6a639;
+}
+.drink-card h2{
+    font-size: 22px;
+}
+.drink-card img{
+    width: 125px;
+    height: 130px;
+    object-fit: contain;
 }
