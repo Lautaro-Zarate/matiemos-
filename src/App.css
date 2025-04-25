@@ -122,7 +122,7 @@ nav{
     scale: 1.05;
     transition: 0.5s;
 }
-.drink-card:checked{
+.drink-card.selected{
     background-color: #2e1b11;
     color: #d6a639;
 }
