@@ -1,5 +1,6 @@
 import { useReducer } from "react";
 import DrinkCard from "./DrinkCard"
+import cafeimg from "../public/cafe-card.png"
 
 const reducer = (state, action) => {
     return state === action.index ? null : action.index;
@@ -9,9 +10,9 @@ const SelectorDrinkContainer = () => {
     const [selectedDrink, dispatch] = useReducer(reducer, null);
 
     const drinks = [
-        {image: "/public/isotipo.png", name: "Mate"},
-        {image: "/public/cafe-card.png", name: "Café"},
-        {image: "/public/te-card.png", name: "Té"}
+        {image: {cafeimg}, name: "Mate"},
+        {image: "cafe-card.png", name: "Café"},
+        {image: "te-card.png", name: "Té"}
     ]
 
     return(

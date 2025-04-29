@@ -1,4 +1,4 @@
-import Brand from "/components/Brand.jsx";
+import Brand from "./Brand";
 
 const Navbar = () => {
     return(
