@@ -2,7 +2,6 @@ import useWeather from "../hooks/useWeather"
 
 const WeatherContainer = () => {
     const {clima, error, loading} = useWeather();
-    console.log(clima, error,loading);
 
     if(loading) return <p>Cargando clima...</p>
     if(error) return <p>Error al obtener el clima 🫤</p>

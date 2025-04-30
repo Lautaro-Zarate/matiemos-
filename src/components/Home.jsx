@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import SelectorDrinkContainer from "./SelectorDrinkContainer";
-const Home = () => {
+const Home = ({onDrinkSelect}) => {
     const [userName, setUserName] = useState("");
     useEffect(() => {
         let savedName = localStorage.getItem("name");
@@ -14,7 +14,7 @@ const Home = () => {
                 <h1>¡Bienvenido {userName}!</h1>
                 <p>¿Que tienes planeado desayunar/merendar hoy?</p>
             </div>
-            <SelectorDrinkContainer/>
+            <SelectorDrinkContainer onDrinkSelect={onDrinkSelect}/>
         </div>
     )
 }

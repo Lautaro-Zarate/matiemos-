@@ -3,7 +3,7 @@
     "id": 1,
     "nombre": "Tostadas con palta",
     "bebida": ["Mate", "Te"],
-    "climasRecomendados": ["templado", "cálido"],
+    "clima": ["templado", "cálido"],
     "descripcion": "Ricas en grasas saludables y frescas para un día templado.",
     "imagen": "/images/tostadas-palta.webp",
     "receta": []
@@ -12,7 +12,7 @@
     "id": 2,
     "nombre": "Churros",
     "bebida": ["Mate", "Te", "Cafe"],
-    "climasRecomendados": ["templado", "cálido", "frio"],
+    "clima": ["templado", "cálido", "frio"],
     "descripcion": "Churrines.",
     "imagen": "/images/tostadas-palta.webp",
     "receta": []
@@ -21,7 +21,7 @@
     "id": 3,
     "nombre": "Facturas",
     "bebida": ["Mate", "Cafe"],
-    "climasRecomendados": ["templado", "frio"],
+    "clima": ["templado", "frio"],
     "descripcion": "Facturas",
     "imagen": "/images/tostadas-palta.webp",
     "receta": []

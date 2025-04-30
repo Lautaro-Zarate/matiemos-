@@ -5,7 +5,7 @@ const reducer = (state, action) => {
     return state === action.index ? null : action.index;
 }
 
-const SelectorDrinkContainer = () => {
+const SelectorDrinkContainer = ({onDrinkSelect}) => {
     const [selectedDrink, dispatch] = useReducer(reducer, null);
 
     const drinks = [
@@ -14,6 +14,10 @@ const SelectorDrinkContainer = () => {
         {image: "/te-card.png", name: "Té"}
     ]
 
+    const handleClick = (index, name) => {
+        dispatch({index});
+        onDrinkSelect(name);
+    }
     return(
         <div className="selector-drink-container">
             {
@@ -23,7 +27,7 @@ const SelectorDrinkContainer = () => {
                     image={drink.image}
                     name={drink.name}
                     isSelected={selectedDrink === index}
-                    onClick={() => dispatch({index})}
+                    onClick={() => handleClick(index, drink.name)}
                     />
                 ))
             }
