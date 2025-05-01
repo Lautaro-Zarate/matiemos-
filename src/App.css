@@ -214,7 +214,7 @@ nav{
 .recipe-steps{
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 12px;
 }
 .button-recipe{
     background-color: #d6a639 !important;

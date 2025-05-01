@@ -24,7 +24,13 @@ function App() {
         sug.bebida.includes(selectedDrink) && 
       sug.clima.includes(nivelClima)
       );
-      setSugerencia(filtradas[0] || null);
+
+      if(filtradas.length > 0){
+        const randomIndex = Math.floor(Math.random() * filtradas.length);
+        setSugerencia(filtradas[randomIndex])
+      }else{
+        setSugerencia(null);
+      }
     }
   }, [selectedDrink, clima]);
 
