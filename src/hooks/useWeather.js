@@ -14,13 +14,28 @@ const useWeather = () => {
 
                 const {latitude, longitude} = pos.coords;
                 const res = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric&lang=es`);
+
                 const data = await res.json();
+
+                const temperatura = Math.round(data.main.temp)
+                let nivelClima = "";
+
+                if(temperatura <= 14){
+                    nivelClima = "frío"
+                } 
+                else if(temperatura <= 25){
+                    nivelClima = "templado";
+                }
+                else{
+                    nivelClima = "calido";
+                }
 
                 const climaData = {
                     ciudad: data.name,
-                    temperatura: Math.round(data.main.temp),
+                    temperatura,
                     description: data.weather[0].description,
                     icono: data.weather[0].icon,
+                    nivelClima
                 };
 
                 setClima(climaData);

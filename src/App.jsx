@@ -4,21 +4,25 @@ import suggestion from './data/suggestion.json'
 import './App.css'
 import Navbar from './components/Navbar'
 import Home from './components/Home.jsx'
-import SuggestionContainer from './components/SuggestionContainer.jsx'
 import AskName from './components/AskName.jsx'
-import WeatherContainer from './components/WeatherContainer.jsx'
-import SuggestionCard from './components/SuggestionCard.jsx'
 
 function App() {
   const [selectedDrink, setSelectedDrink] = useState(null);
   const [sugerencia, setSugerencia] = useState(null);
-  const {clima} = useWeather();
+  const {clima, loading, error} = useWeather();
+
+  const getNivelClima = (temp) => {
+    if(temp < 14) return "frio";
+    if(temp >= 14 && temp < 25) return "templado";
+    return "calido";
+  }
 
   useEffect(() => {
-    if(selectedDrink && clima){
+    if(selectedDrink && clima?.temperatura !== undefined){
+      const nivelClima = getNivelClima(clima.temperatura);
       const filtradas = suggestion.filter((sug) => 
         sug.bebida.includes(selectedDrink) && 
-      sug.clima.includes(clima.description)
+      sug.clima.includes(nivelClima)
       );
       setSugerencia(filtradas[0] || null);
     }
@@ -30,17 +34,14 @@ function App() {
   return (
   <div>
     <Navbar/>
-    <Home onDrinkSelect={handleDrinkSelection}/>
+    <Home 
+    onDrinkSelect={handleDrinkSelection} 
+    selectedDrink={selectedDrink} 
+    sugerencia={sugerencia} 
+    clima={clima} 
+    loading={loading} 
+    error={error} />
     {/* <AskName/> */}
-    {/* <WeatherContainer/> */}
-    {
-      sugerencia && (
-        <>
-          <h2>Te sugerimos acompañarlo con: </h2>
-          <SuggestionCard sugerencia={sugerencia}/>
-        </>
-      )
-    }
   </div>
   )
 }
