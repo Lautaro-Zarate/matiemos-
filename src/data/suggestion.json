@@ -6,7 +6,7 @@
     "clima": ["templado", "cálido"],
     "descripcion": "Ricas en grasas saludables y frescas para un día templado.",
     "imagen": "/images/tostadas-palta.webp",
-    "receta": []
+    "receta": [1,2,3]
     },
     {
     "id": 2,

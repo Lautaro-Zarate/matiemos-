@@ -6,13 +6,13 @@ const WeatherContainer = () => {
     if(loading) return <p>Cargando clima...</p>
     if(error) return <p>Error al obtener el clima 🫤</p>
     return(
-        <div>
-            <h3>Ciudad: {clima.ciudad}</h3>
-            <div>
+        <div className="weather-container">
+            <div className="weather-info">
                 <span>{clima.temperatura}°C</span>
-                <span>{clima.description}</span>
-                <img src={`https://openweathermap.org/img/wn/${clima.icono}@2x.png`} alt="Icono del clima" />
+                <h3>{clima.ciudad}</h3>
             </div>
+                {/* <span>{clima.description}</span> */}
+                <img src={`https://openweathermap.org/img/wn/${clima.icono}@2x.png`} alt="Icono del clima" />
         </div>
     )
 }
