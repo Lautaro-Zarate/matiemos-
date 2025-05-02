@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react'
 import useWeather from './hooks/useWeather.js'
 import suggestion from './data/suggestion.json'
+
 import './App.css'
+import { Fade } from '@mui/material'
+
 import Navbar from './components/Navbar'
 import Home from './components/Home.jsx'
 import Footer from './components/Footer.jsx'
@@ -11,10 +14,16 @@ function App() {
   const [selectedDrink, setSelectedDrink] = useState(null);
   const [sugerencia, setSugerencia] = useState(null);
   const {clima, loading, error} = useWeather();
+  const [name, setName] = useState("");
+
+  useEffect(() => {
+    let nameSaved = localStorage.getItem("name");
+    setName(nameSaved);
+  }, [])
 
   const getNivelClima = (temp) => {
     if(temp < 14) return "frio";
-    if(temp >= 14 && temp < 25) return "templado";
+    if(temp >= 14 && temp < 24) return "templado";
     return "calido";
   }
 
@@ -40,16 +49,24 @@ function App() {
   }
   return (
   <div>
-    <Navbar/>
-    <Home 
-    onDrinkSelect={handleDrinkSelection} 
-    selectedDrink={selectedDrink} 
-    sugerencia={sugerencia} 
-    clima={clima} 
-    loading={loading} 
-    error={error} />
-    <Footer/>
-    {/* <AskName/> */}
+    {!name 
+    ?(<AskName userName={setName}/>)
+    : (
+      <Fade in timeout={800}>
+        <div>
+          <Navbar />
+          <Home 
+            onDrinkSelect={handleDrinkSelection} 
+            selectedDrink={selectedDrink} 
+            sugerencia={sugerencia} 
+            clima={clima} 
+            loading={loading} 
+            error={error} 
+          />
+          <Footer />
+        </div>
+      </Fade>
+    )}
   </div>
   )
 }

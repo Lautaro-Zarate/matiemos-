@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import SelectorDrinkContainer from "./SelectorDrinkContainer";
 import SuggestionCard from "./SuggestionCard"
 import WeatherContainer from "./WeatherContainer";
-import { Slide } from "@mui/material";
+import { Fade, Slide } from "@mui/material";
 
 const Home = (props) => {
     const {onDrinkSelect, selectedDrink, sugerencia, loading, error} = props;
@@ -25,12 +25,11 @@ const Home = (props) => {
             <WeatherContainer/>
             <SelectorDrinkContainer 
             onDrinkSelect={onDrinkSelect}/>
-
             {error && <p>Error al obtener el clima</p>}
             {selectedDrink && !loading && !error && (
                 sugerencia ? (
                     <>
-                    <Slide in={!!sugerencia} direction="right" timeout={1500}>
+                    <Slide in={!!sugerencia} direction="up" timeout={1500}>
                     <div>
                     <SuggestionCard sugerencia={sugerencia}/>
                     </div>

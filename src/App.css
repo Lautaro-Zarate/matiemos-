@@ -27,13 +27,17 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    height: 50%;
-    width: auto;
-    margin: 50% 10px;
+    height: 100vh;
+    width: 100%;
     padding: 60px 10px;
     border-radius: 12px;
-    background-color: #bb7d3c;
+    background-color: #bb7e3c;
     text-align: center;
+}
+.askName-container img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
 }
 .askName-container p{
     font-size: 40px;
