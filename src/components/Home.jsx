@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import SelectorDrinkContainer from "./SelectorDrinkContainer";
 import SuggestionCard from "./SuggestionCard"
 import WeatherContainer from "./WeatherContainer";
+import { Slide } from "@mui/material";
 
 const Home = (props) => {
     const {onDrinkSelect, selectedDrink, sugerencia, loading, error} = props;
@@ -29,7 +30,11 @@ const Home = (props) => {
             {selectedDrink && !loading && !error && (
                 sugerencia ? (
                     <>
+                    <Slide in={!!sugerencia} direction="right" timeout={1500}>
+                    <div>
                     <SuggestionCard sugerencia={sugerencia}/>
+                    </div>
+                    </Slide>
                     </>
                 ):(
                     <p className="p-no-hay-sugerencias">No hay sugerencia para esta combinación</p>

@@ -6,6 +6,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { Collapse } from "@mui/material";
 
 const SuggestionCard = ({sugerencia}) => {
     
@@ -37,7 +38,7 @@ const SuggestionCard = ({sugerencia}) => {
                     </Button>
                 </CardActions>    
                 )}
-                {showRecipe && (
+                <Collapse in={showRecipe} timeout={700} unmountOnExit>
                     <CardContent className="recipe-container">
                         <div>
                             <ul className="recipe-steps">
@@ -48,30 +49,10 @@ const SuggestionCard = ({sugerencia}) => {
                             </ul>
                         </div>
                     </CardContent>
-                )}
+                </Collapse>
             </Card>
-    </div>
+        </div>
     );
 }
-// const SuggestionCard = ({sugerencia}) => {
-//     const {nombre, descripcion, imagen, receta} = sugerencia;
-//     return(
-//         <div>
-//             <img src={imagen} alt={nombre}/>
-//             <h3>{nombre}</h3>
-//             <p>{descripcion}</p>
-//             {receta && receta.length > 0 && (
-                // <>
-                // <h4>Receta: </h4>
-                // <ul>
-                //     {receta.map((paso, index) => (
-                //         <li key={index}>{paso}</li>
-                //     ))}
-                // </ul>
-                // </>
-            // )}
-//         </div>
-//     )
-// }
 
 export default SuggestionCard;

@@ -39,7 +39,7 @@
     {
     "id": 4,
     "nombre": "Churros",
-    "bebida": ["Té", "Café"],
+    "bebida": ["Café"],
     "clima": ["frio", "templado"],
     "descripcion": "Crocantes, dulces y tentadores, perfectos para días frescos.",
     "imagen": "/public/images/receta4.webp",

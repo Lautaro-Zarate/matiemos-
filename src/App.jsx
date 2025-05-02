@@ -4,6 +4,7 @@ import suggestion from './data/suggestion.json'
 import './App.css'
 import Navbar from './components/Navbar'
 import Home from './components/Home.jsx'
+import Footer from './components/Footer.jsx'
 import AskName from './components/AskName.jsx'
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
     clima={clima} 
     loading={loading} 
     error={error} />
+    <Footer/>
     {/* <AskName/> */}
   </div>
   )
