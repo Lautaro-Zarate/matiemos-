@@ -28,7 +28,7 @@
     "bebida": ["Té", "Mate"],
     "clima": ["templado", "frio"],
     "descripcion": "Rellenos, suaves y sabrosos, infaltables en meriendas argentinas tradicionales.",
-    "imagen": "/public/images/receta3.webp",
+    "imagen": "/images/receta3.webp",
     "receta": [
         "Mezclar 100g manteca, 100g azúcar y 2 yemas hasta cremoso."
         ,"Agregar 1 cda de esencia de vainilla y ralladura de limón."
