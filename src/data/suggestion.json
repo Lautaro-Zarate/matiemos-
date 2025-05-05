@@ -51,7 +51,7 @@
     "bebida": ["Mate", "Café", "Té"],
     "clima": ["templado", "frio"],
     "descripcion": "Esponjoso, rústico, combina perfecto con mermeladas o fiambres suaves.",
-    "imagen": "/public/images/receta5.webp",
+    "imagen": "/images/receta5.webp",
     "receta": [
         "Mezclar 500g de harina, 10g de levadura seca, 10g de sal."
         ,"Agregar 300ml de agua tibia y 2 cdas de aceite."
@@ -65,7 +65,7 @@
     "bebida": ["Mate", "Café"],
     "clima": ["templado", "frio","calido"],
     "descripcion": "Salados, crocantes, perfectos para acompañar un buen mate amargo.",
-    "imagen": "/public/images/receta6.webp",
+    "imagen": "/images/receta6.webp",
     "receta": []
     },
     {
@@ -74,7 +74,7 @@
     "bebida": ["Café", "Té"],
     "clima": ["templado", "frio"],
     "descripcion": "Esponjosos y dulces, se disfrutan tibios con café o té.",
-    "imagen": "/public/images/receta7.webp",
+    "imagen": "/images/receta7.webp",
     "receta": [
         "Batir 1 huevo con ½ taza de azúcar y ⅓ taza de aceite."
         ,"Agregar 1 taza de leche y esencia de vainilla."
@@ -88,7 +88,7 @@
     "bebida": ["Té", "Café","Mate"],
     "clima": ["frio", "templado"],
     "descripcion": "Mantecosos y tiernos, van muy bien con mermelada casera.",
-    "imagen": "/public/images/receta8.webp",
+    "imagen": "/images/receta8.webp",
     "receta": [
         "Mezclar 2 tazas de harina, 1 cda de polvo de hornear, 2 cdas de azúcar y pizca de sal."
         ,"Agregar 50g de manteca fría en cubos y arenar con las manos."
@@ -102,7 +102,7 @@
     "bebida": ["Té", "Mate"],
     "clima": ["templado", "frio"],
     "descripcion": "Livianas y crujientes, combinan bien con dulce o salado.",
-    "imagen": "/public/images/receta9.webp",
+    "imagen": "/images/receta9.webp",
     "receta": []
     },
     {
@@ -111,7 +111,7 @@
     "bebida": ["Mate", "Café"],
     "clima": ["templado", "frio"],
     "descripcion": "Dulces tradicionales, ideales para compartir con café o mate.",
-    "imagen": "/public/images/receta10.webp",
+    "imagen": "/images/receta10.webp",
     "receta": []
     },
     {
@@ -120,7 +120,7 @@
     "bebida": ["Mate","Café","Té"],
     "clima": ["calido", "templado","frio"],
     "descripcion": "Sin dudas, un clásico argentino. Ideales para compartir en reuniones.",
-    "imagen": "/public/images/receta11.webp",
+    "imagen": "/images/receta11.webp",
     "receta": []
     },
     {
@@ -129,7 +129,7 @@
     "bebida": ["Café", "Té"],
     "clima": ["frio", "templado"],
     "descripcion": "Caseras y variadas, aportan dulzura y calidez en cada bocado.",
-    "imagen": "/public/images/receta12.webp",
+    "imagen": "/images/receta12.webp",
     "receta": []
     },
     {
@@ -138,7 +138,7 @@
     "bebida": ["Mate", "Té"],
     "clima": ["calido"],
     "descripcion": "Polémico, pero fresco y rico para días calurosos.",
-    "imagen": "/public/images/receta13.webp",
+    "imagen": "/images/receta13.webp",
     "receta": []
     },
     {
@@ -147,7 +147,7 @@
     "bebida": ["Mate", "Té"],
     "clima": ["calido", "templado"],
     "descripcion": "Saludable y nutritivo, ideal para un desayuno ligero. ",
-    "imagen": "/public/images/receta14.webp",
+    "imagen": "/images/receta14.webp",
     "receta": [
         "Licuar 1 taza de avena, 1 banana, 1 huevo y ½ taza de leche."
         ,"Calentar sartén antiadherente con un poco de aceite o manteca."
@@ -161,7 +161,7 @@
     "bebida": ["Mate", "Café"],
     "clima": ["templado", "frio","calido"],
     "descripcion": "Crujientes y sabrosos, ideales para desayuno salado o dulce.",
-    "imagen": "/public/images/receta15.webp",
+    "imagen": "/images/receta15.webp",
     "receta": []
     }
 ]

@@ -1,7 +1,7 @@
 const Brand = () => {
     return(
         <>
-            <img src="../public/logotipo.png" alt="Logo de Matiemos" className="brand-navbar"/>
+            <img src="/logotipo.png" alt="Logo de Matiemos" className="brand-navbar"/>
         </>
     )
 }
