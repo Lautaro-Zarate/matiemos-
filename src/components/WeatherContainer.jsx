@@ -4,7 +4,7 @@ const WeatherContainer = () => {
     const {clima, error, loading} = useWeather();
 
     if(loading) return <p>Cargando clima...</p>
-    if(error) return <p>Error al obtener el clima 🫤</p>
+    if(error) return <p className="not-weather">Error al obtener el clima</p>
     return(
         <Grow in={true} timeout={1500}>
         <div className="weather-container">

@@ -175,6 +175,19 @@ nav{
     gap: 20px;
     align-items: center;
 }
+/* SUGGESTION CONTAINER */
+.not-weather{
+    text-align: center;
+    margin: 20px 10px;
+    font-size: 1.1rem;
+    background-color: #d6a639;
+    color: #2e1b11;
+    padding: 10px;
+    border-radius: 12px;
+}
+.not-weather-secondary{
+    display: none;
+}
 /* SUGGESTION-CARD */
 .card-suggestion-container{
     display: flex;

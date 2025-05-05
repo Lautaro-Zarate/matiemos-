@@ -25,7 +25,7 @@ const Home = (props) => {
             <WeatherContainer/>
             <SelectorDrinkContainer 
             onDrinkSelect={onDrinkSelect}/>
-            {error && <p>Error al obtener el clima</p>}
+            {error && <p className="not-weather-secondary">Error al obtener el clima</p>}
             {selectedDrink && !loading && !error && (
                 sugerencia ? (
                     <>
