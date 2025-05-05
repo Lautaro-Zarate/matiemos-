@@ -5,7 +5,7 @@
     "bebida": ["Mate","Té"],
     "clima": ["templado", "calido"],
     "descripcion": "Ricas en grasas saludables y frescas para un día templado.",
-    "imagen": "/public/images/receta1.webp",
+    "imagen": "/images/receta1.webp",
     "receta": [
         "Tostar pan a gusto (integral, salvado, masa madre, etc.)."
         ,"Aplastar ½ palta con sal, pimienta y jugo de limón. "
@@ -19,7 +19,7 @@
     "bebida": ["Mate","Té","Café"],
     "clima": ["frio", "templado"],
     "descripcion": "Húmedo y dulce, excelente opción para compartir en tardes tranquilas.",
-    "imagen": "/public/images/receta2.webp",
+    "imagen": "/images/receta2.webp",
     "receta": []
     },
     {
@@ -42,7 +42,7 @@
     "bebida": ["Café"],
     "clima": ["frio", "templado"],
     "descripcion": "Crocantes, dulces y tentadores, perfectos para días frescos.",
-    "imagen": "/public/images/receta4.webp",
+    "imagen": "/images/receta4.webp",
     "receta": []
     },
     {
