@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { CircularProgress } from "@mui/material";
 const LoaderComponent = () => {
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     
     setInterval(() => {
-        setLoading(true)
+        setLoading(false)
     }, 2000)
     
     return(

@@ -18,8 +18,8 @@ const AskName = ({userName}) => {
             <div className="askName-container">
                 <img src="/isotipo.png" alt="Logo Matiemos" />
                 <div>
-                    <p>¡HOLA!</p>
-                    <h1>¿Cómo es tu nombre?</h1>
+                    <h1>¡HOLA!</h1>
+                    <p>¿Cómo es tu nombre?</p>
                 </div>
                 <input 
                 type="text" 

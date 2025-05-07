@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import SelectorDrinkContainer from "./SelectorDrinkContainer";
 import SuggestionCard from "./SuggestionCard"
 import WeatherContainer from "./WeatherContainer";
-import { Slide } from "@mui/material";
+import ButtonSound from "./ButtonSound";
+import { Slide, Grow } from "@mui/material";
 
 const Home = (props) => {
-    const {onDrinkSelect, selectedDrink, sugerencia, loading, error} = props;
+    const {onDrinkSelect, selectedDrink, sugerencia, loading, error, clima} = props;
 
     const [userName, setUserName] = useState("");
     
@@ -18,11 +19,14 @@ const Home = (props) => {
     
     return(
         <div>
+            <ButtonSound/>
+            <WeatherContainer/>
+            <Grow in={true} timeout={1500}>
             <div className="home-greeting-container">
                 <h1>¡Bienvenido {userName}!</h1>
                 <p>¿Que tienes planeado desayunar/merendar hoy?</p>
             </div>
-            <WeatherContainer/>
+            </Grow>
             <SelectorDrinkContainer 
             onDrinkSelect={onDrinkSelect}/>
             {error && <p className="not-weather-secondary">Error al obtener el clima</p>}
@@ -39,6 +43,7 @@ const Home = (props) => {
                     <p className="p-no-hay-sugerencias">No hay sugerencia para esta combinación</p>
                 )
             )}
+            {!clima && <p className="not-weather">Necesitamos la obtención de tu clima para darte una mejor recomendación</p>}
         </div>
     )
 }

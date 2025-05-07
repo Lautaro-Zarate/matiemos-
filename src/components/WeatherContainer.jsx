@@ -10,10 +10,10 @@ const WeatherContainer = () => {
         <Grow in={true} timeout={1500}>
         <div className="weather-container">
             <div className="weather-info">
-                <span>{clima.temperatura}°C</span>
-                <h3>{clima.ciudad}</h3>
+                <h3>{clima.temperatura}°C</h3>
+                <p>{clima.ciudad}</p>
             </div>
-                <img src={`https://openweathermap.org/img/wn/${clima.icono}@2x.png`} alt="Icono del clima" />
+            <img src={`https://openweathermap.org/img/wn/${clima.icono}@2x.png`} alt="Icono del clima" />
         </div>
         </Grow>
     )

@@ -24,7 +24,7 @@ const SuggestionCard = ({sugerencia}) => {
                     title={nombre}
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography gutterBottom variant="h5" component="div" className="title-card-suggestion">
                     {nombre}
                     </Typography>
                     <Typography variant="body2" className='description-card'>
