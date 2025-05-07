@@ -1,9 +1,10 @@
 import useWeather from "../hooks/useWeather"
+import LoaderComponent from "./LoaderComponent";
 import { Grow } from "@mui/material";
 const WeatherContainer = () => {
     const {clima, error, loading} = useWeather();
 
-    if(loading) return <p>Cargando clima...</p>
+    if(loading) return <div><LoaderComponent/></div>
     if(error) return <p className="not-weather">Error al obtener el clima</p>
     return(
         <Grow in={true} timeout={1500}>

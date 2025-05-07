@@ -240,3 +240,10 @@ nav{
     padding: 7px 12px !important;
     margin-bottom: 7px !important;
 }
+/* LOADER-COMPONENT */
+.loader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}

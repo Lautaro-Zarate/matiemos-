@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import SelectorDrinkContainer from "./SelectorDrinkContainer";
 import SuggestionCard from "./SuggestionCard"
 import WeatherContainer from "./WeatherContainer";
-import { Fade, Slide } from "@mui/material";
+import { Slide } from "@mui/material";
 
 const Home = (props) => {
     const {onDrinkSelect, selectedDrink, sugerencia, loading, error} = props;
