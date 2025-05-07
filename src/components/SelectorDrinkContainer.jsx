@@ -9,9 +9,9 @@ const SelectorDrinkContainer = ({onDrinkSelect}) => {
     const [selectedDrink, dispatch] = useReducer(reducer, null);
 
     const drinks = [
-        {image: "/isotipo.png", name: "Mate"},
-        {image: "/cafe-card.png", name: "Café"},
-        {image: "/te-card.png", name: "Té"}
+        {image: "/isotipo.webp", name: "Mate"},
+        {image: "/cafe-card.webp", name: "Café"},
+        {image: "/te-card.webp", name: "Té"}
     ]
 
     const handleClick = (index, name) => {

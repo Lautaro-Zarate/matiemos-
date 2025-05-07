@@ -16,7 +16,7 @@ const AskName = ({userName}) => {
     return(
         <Grow in={true} timeout={1000}>
             <div className="askName-container">
-                <img src="/isotipo.png" alt="Logo Matiemos" />
+                <img src="/isotipo.webp" alt="Logo Matiemos" />
                 <div>
                     <h1>¡HOLA!</h1>
                     <p>¿Cómo es tu nombre?</p>
