@@ -294,3 +294,104 @@ nav{
     border-radius: 50%;
     font-size: 2rem;
 }
+
+@media (min-width: 1024px){
+    /* ASKNAME SECTION */
+.askName-container img{
+    width: 400px;
+    height: 400px;
+}
+.askName-container p{
+    font-size: 2rem;
+}
+.askName-container h1{
+    font-size: 4.5rem;
+}
+.askName-container input{
+    width: 400px;
+    height: 70px;
+}
+.askName-container button{
+    cursor: pointer;
+}
+/* HOME */
+.home-greeting-container{
+    justify-content: center;
+    height: 40vh;
+    gap: 15px;
+}
+.home-greeting-container h1{
+    font-size: 5rem;
+}
+.home-greeting-container p{
+    font-size: 1.3rem;
+}
+.not-weather{
+    margin: 20px 450px;
+}
+/* SELECTOR DRINK CONTAINER */
+.selector-drink-container{
+    gap: 0;
+}
+/* DRINK-CARD */
+.drink-card{
+    width: 250px;
+    height: 300px;
+}
+.drink-card:hover{
+    scale: 1.05;
+    transition: 0.5s;
+}
+.drink-card.selected{
+    background-color: #2e1b11;
+    color: #d6a639;
+}
+.drink-card h2{
+    font-size: 2rem;
+    margin-right: 20px;
+}
+.drink-card img{
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+/* WEATHER CONTAINER */
+.weather-container{
+    display: flex;
+    margin: 20px 100px;
+    padding: 0;
+    height: 15rem;
+}
+.weather-container h3{
+    font-size: 5rem;
+}
+.weather-container p{
+    font-size: 1.2rem;
+}
+/* SUGGESTION-CARD */
+.card-suggestion-container{
+    margin-top: 20px;
+}
+.button-recipe:hover{
+    background-color: #2e1b11 !important;
+    color: #d6a639 !important;
+    border: 1px solid #d6a639 ;
+    transition: 0.5s !important;
+}
+.btn-other-suggestion:hover{
+    background-color: #d6a639;
+    color: #2e1b11;
+    border: none;
+    transition: 0.5s;
+}
+/* BUTTON CONTAINER */
+.btn-sound{
+    cursor: pointer;
+    padding: 15px;
+    font-size: 2.5rem;
+    transition: background-color 0.3s;
+}
+.btn-sound:hover{
+    background-color: #2e1b11;
+}
+}
