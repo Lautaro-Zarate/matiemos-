@@ -8,11 +8,12 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Collapse } from "@mui/material";
 
-const SuggestionCard = ({sugerencia}) => {
+const SuggestionCard = ({sugerencia, onClickOtherSugg}) => {
     
     const {nombre, descripcion, imagen, receta} = sugerencia;
     const [showRecipe, setShowRecipe] = useState(false);
     const handleClick = () => setShowRecipe(prev => !prev)
+    
 
     return (
         <div className='card-suggestion-container'>
@@ -24,9 +25,12 @@ const SuggestionCard = ({sugerencia}) => {
                     title={nombre}
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div" className="title-card-suggestion">
-                    {nombre}
-                    </Typography>
+                    <div className="card-suggestion-container-secondary">
+                        <Typography gutterBottom variant="h5" component="div" className="title-card-suggestion">
+                        {nombre}
+                        </Typography>
+                        <Button className="btn-other-suggestion" onClick={onClickOtherSugg}>Otra sugerencia</Button>
+                        </div>
                     <Typography variant="body2" className='description-card'>
                     {descripcion}
                     </Typography>

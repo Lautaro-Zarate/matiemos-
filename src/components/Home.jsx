@@ -6,7 +6,7 @@ import ButtonSound from "./ButtonSound";
 import { Slide, Grow } from "@mui/material";
 
 const Home = (props) => {
-    const {onDrinkSelect, selectedDrink, sugerencia, loading, error, clima} = props;
+    const {onDrinkSelect, onClickOtherSugg ,selectedDrink, sugerencia, loading, error, clima} = props;
 
     const [userName, setUserName] = useState("");
     
@@ -35,7 +35,7 @@ const Home = (props) => {
                     <>
                     <Slide in={!!sugerencia} direction="up" timeout={1500}>
                     <div>
-                    <SuggestionCard sugerencia={sugerencia}/>
+                    <SuggestionCard sugerencia={sugerencia} onClickOtherSugg={onClickOtherSugg}/>
                     </div>
                     </Slide>
                     </>

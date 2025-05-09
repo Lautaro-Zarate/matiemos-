@@ -47,6 +47,26 @@ function App() {
   const handleDrinkSelection = (drinkName) => {
     setSelectedDrink(drinkName);
   }
+
+  const handleClickOtherSuggestion = () => {
+    if(selectedDrink && clima?.temperatura !== undefined){
+      const nivelClima = getNivelClima(clima.temperatura);
+      const filtradas = suggestion.filter(
+        (sug) => 
+          sug.bebida.includes(selectedDrink) &&
+          sug.clima.includes(nivelClima) &&
+          sug.id !== sugerencia?.id // Excluye la sugerencia actual;
+        );
+
+        if(filtradas.length > 0){
+          const randomIndex = Math.floor(Math.random() * filtradas.length);
+          setSugerencia(filtradas[randomIndex])
+        }
+
+    }
+  } 
+
+
   return (
   <div>
     {!name 
@@ -57,6 +77,7 @@ function App() {
           <Navbar />
           <Home 
             onDrinkSelect={handleDrinkSelection} 
+            onClickOtherSugg={handleClickOtherSuggestion}
             selectedDrink={selectedDrink} 
             sugerencia={sugerencia} 
             clima={clima} 
