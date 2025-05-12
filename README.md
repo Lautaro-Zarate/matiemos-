@@ -1,12 +1,63 @@
-# React + Vite
+# 🧉 Matiemos – Recomendador de Merienda según el Clima
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Matiemos** es una aplicación web desarrollada con React.js que sugiere acompañamientos ideales para el mate, té o café, basándose en el clima actual del usuario. Es un proyecto personal enfocado en practicar habilidades de desarrollo frontend y diseño de producto digital.
 
-Currently, two official plugins are available:
+## 🚀 Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👉 [Probar la app](https://matiemos.vercel.app/)
 
-## Expanding the ESLint configuration
+## ✨ Características
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Elección de bebida: mate, té o café.
+- Recomendación de acompañamiento según el clima local.
+- Lógica aleatoria para obtener nuevas sugerencias.
+- Recetas incluidas para preparaciones caseras.
+- Interfaz simple, amigable y responsive.
+- Animaciones suaves con Material UI.
+- Sonido de mate al presionar un botón especial.
+- Input inicial de nombre guardado en `localStorage`.
+- Icono personalizado (favicon) y fuentes personalizadas.
+- JSON local con 15 acompañamientos detallados.
+
+## 🛠️ Tecnologías utilizadas
+
+- **React.js** (`useState`, `useEffect`, `useReducer`)
+- **Custom Hook**: `useWeather` para obtener datos del clima
+- **Material UI** (`Grow`, `Slide`, `Card`, `Button`)
+- **CSS** personalizado para diseño responsive
+- **JSON** como base de datos local
+- **WebP** para optimización de imágenes
+- **Vercel** para deploy
+
+## 📂 Estructura del proyecto
+/src
+├── components
+│ ├── Home.jsx
+│ ├── Navbar.jsx
+│ ├── Footer.jsx
+│ ├── SuggestionCard.jsx
+│ ├── AskName.jsx
+│ └── ButtonSound.jsx
+├── data
+│ └── suggestion.json
+├── hooks
+│ └── useWeather.js
+├── assets
+│ └── (imágenes .webp y sonidos)
+└── App.jsx
+
+## 🔧 Cómo correrlo localmente
+
+1. Cloná el repo:
+
+   ```bash
+   git clone https://github.com/Lautaro-Zarate/matiemos-
+   cd matiemos
+
+2. Instalá las dependencias:
+    npm install
+
+3. Corré el proyecto:
+    npm run dev
+
+## Desarrollador con cariño por Lautaro Zarate Rivas.
