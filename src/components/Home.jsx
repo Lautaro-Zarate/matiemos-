@@ -18,18 +18,19 @@ const Home = (props) => {
     }, []);
     
     return(
-        <div>
+        <main>
             <ButtonSound/>
             <WeatherContainer/>
             <Grow in={true} timeout={1500}>
-            <div className="home-greeting-container">
+            <section className="home-greeting-container">
                 <h1>¡Bienvenido {userName}!</h1>
                 <p>¿Que tienes planeado desayunar/merendar hoy?</p>
-            </div>
+            </section>
             </Grow>
             <SelectorDrinkContainer 
             onDrinkSelect={onDrinkSelect}/>
             {error && <p className="not-weather-secondary">Error al obtener el clima</p>}
+            {/* Si hay una bebida seleccionada, y no estamos cargando datos, y no hubo errores, entonces 👇 */}
             {selectedDrink && !loading && !error && (
                 sugerencia ? (
                     <>
@@ -44,7 +45,7 @@ const Home = (props) => {
                 )
             )}
             {!clima && <p className="not-weather">Necesitamos la obtención de tu clima para darte una mejor recomendación</p>}
-        </div>
+        </main>
     )
 }
 export default Home;

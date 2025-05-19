@@ -15,11 +15,12 @@ const SelectorDrinkContainer = ({onDrinkSelect}) => {
     ]
 
     const handleClick = (index, name) => {
+        // Dispatch manda argumentos al action en forma de objeto
         dispatch({index});
         onDrinkSelect(name);
     }
     return(
-        <div className="selector-drink-container">
+        <section className="selector-drink-container">
             {
                 drinks.map((drink, index) => (
                     <DrinkCard
@@ -31,7 +32,7 @@ const SelectorDrinkContainer = ({onDrinkSelect}) => {
                     />
                 ))
             }
-        </div>
+        </section>
     )
 }
 export default SelectorDrinkContainer;
